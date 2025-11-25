@@ -1,0 +1,3 @@
+enabled: true
+webhook_url: ""
+discord_message: "**Opublikowano wpis!**\n📌 *{title}*\nCzytaj więcej: 🔗 {url}"

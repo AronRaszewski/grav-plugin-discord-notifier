@@ -1,0 +1,30 @@
+name: Discord Notifier
+version: 1.0.0
+description: Sends notifications to Discord when a page is published.
+icon: bell
+license: MIT
+author:
+  name: Aron Raszewksi
+  email: aron.raszewski@gmail.com
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin enabled
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+
+    webhook_url:
+      type: text
+      label: Discord Webhook URL
+      help: Paste here webhook address from Discord
+    
+    discord_message:
+      type: text
+      label: Message the plugin will send to Discord
+      help: Replace post's title with *{title}* and post's url with *{url}*
